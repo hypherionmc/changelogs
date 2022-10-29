@@ -15,6 +15,7 @@
 * Automatic Account Linking when whitelisting. Does not work on Admin/Moderators
 * Added support for whitelisting on servers running in OFFLINE mode. (THIS IS NOT TO ENCOURAGE PIRACY!)
 * Added a reload command to reload config without a server restart
+* Added config option to disable channel topic updates
 
 **Changes**:
 

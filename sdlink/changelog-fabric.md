@@ -20,6 +20,7 @@
 * Added support for whitelisting on servers running in OFFLINE mode. (THIS IS NOT TO ENCOURAGE PIRACY!)
 * Added FabricTailor Support
 * Added a reload command to reload config without a server restart
+* Added config option to disable channel topic updates
 
 **Changes**:
 
