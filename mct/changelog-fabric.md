@@ -2,13 +2,14 @@
 
 **Requires Quilt Standard Libraries for Quilt**
 
+**New Features**:
+
+* You can now replace almost any Creative Tab, with a Custom one. Supports Vanilla/Modded
+* Disabled tabs are now completely hidden from the GUI. All other tabs move over to fill empty slots
+* You can now specify a custom order in which Creative Tabs will be displayed
+* Item Tooltips now show you the item name (to be used in the config), when `showTabNames` are enabled
+
 **Changes**:
 
-* Allow you to use an ItemStack with NBT for the tab icon
-* Allow you to override item display names in Custom Tabs
-* Added a command (`/mct reloadTabs`) to reload tabs without restarting the game
-* `showTabNames` has moved to `/mct showTabNames`
-
-**Bug Fixes**:
-
-* Fixed loading files with `json` somewhere in the name, when it should be ignored
+* 1.19.1/1.19.2 is now marked as supported
+* Items from Disabled tabs now still show up in the Search Tab
