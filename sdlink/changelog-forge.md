@@ -1,3 +1,24 @@
+### Heads Up. With the big decline in 1.16.5 downloads and Forge officially dropping support for it, coupled with the hassle of keeping it up to date, this will be the last 1.16.5 release
+---
+
 **Bug Fixes**:
 
-* Fixed an incompatibility with kotlinforforge
+* Fixed Event Webhooks overriding Chat Webhooks [Issue #24](https://github.com/hypherionmc/sdlink/issues/24)
+* Strip additional formatting from MC usernames [Issue #27](https://github.com/hypherionmc/sdlink/issues/27)
+* Fixed missing pack.mcmeta on 1.16.5 [Issue #30](https://github.com/hypherionmc/sdlink/issues/30)
+
+**New Features**:
+
+* Console Channel. Relays your MC console to discord (once the server has fully started). [Issue #28](https://github.com/hypherionmc/sdlink/issues/28)
+* Linked Commands. Execute Minecraft commands from Discord (Only inside the Console Channel) [Issue #28](https://github.com/hypherionmc/sdlink/issues/28)
+* Discord -> Minecraft and Minecraft -> Discord message Formatting where supported [Issue #5](https://github.com/hypherionmc/sdlink/issues/5)
+
+### Notes:
+
+The Console Channel and Linked commands are a BETA feature. If you only wish to use Console Commands, and not have the console relayed, you can disable it using the
+`sendConsoleMessages` config option.
+
+
+The formatting feature is also experimental. If it does cause problems for you, you can disable it using the `formatting` config option, BUT PLEASE REPORT ANY ISSUES!
+
+---
