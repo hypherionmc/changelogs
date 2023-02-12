@@ -1,24 +1,28 @@
-### Heads Up. With the big decline in 1.16.5 downloads and Forge officially dropping support for it, coupled with the hassle of keeping it up to date, this will be the last 1.16.5 release
----
+### 1.16.5 is now officially end of life. Meaning it won't receive any more updates. If anyone wishes to maintain this version, please get in touch with me on Discord
+
+## Warning: This version includes some big config changes. Please double-check your config after upgrading!
 
 **Bug Fixes**:
 
-* Fixed Event Webhooks overriding Chat Webhooks [Issue #24](https://github.com/hypherionmc/sdlink/issues/24)
-* Strip additional formatting from MC usernames [Issue #27](https://github.com/hypherionmc/sdlink/issues/27)
-* Fixed missing pack.mcmeta on 1.16.5 [Issue #30](https://github.com/hypherionmc/sdlink/issues/30)
+* Fixed duplicate messages being sent when Formatting is enabled
+* Added error catching to console messages to prevent server crashes
+* Fixed short lag spike when a message is sent to discord from MC
+* Discord Nicknames are now respected in messages sent to minecraft
+* Discord Invite link is now clickable in chat
 
-**New Features**:
+**Breaking Changes**:
 
-* Console Channel. Relays your MC console to discord (once the server has fully started). [Issue #28](https://github.com/hypherionmc/sdlink/issues/28)
-* Linked Commands. Execute Minecraft commands from Discord (Only inside the Console Channel) [Issue #28](https://github.com/hypherionmc/sdlink/issues/28)
-* Discord -> Minecraft and Minecraft -> Discord message Formatting where supported [Issue #5](https://github.com/hypherionmc/sdlink/issues/5)
+* You can now choose individual destination channels per message. (this change is NOT automatic)
+* Embeds are now controlled per message, and not per channel/webhook (this change is NOT automatic)
+* You can now use Webhooks for messages sent to the console channel (THIS EXCLUDES THE CONSOLE RELAY FUNCTION)
 
-### Notes:
+**New Stuff**:
 
-The Console Channel and Linked commands are a BETA feature. If you only wish to use Console Commands, and not have the console relayed, you can disable it using the
-`sendConsoleMessages` config option.
-
-
-The formatting feature is also experimental. If it does cause problems for you, you can disable it using the `formatting` config option, BUT PLEASE REPORT ANY ISSUES!
-
----
+* Messages sent with tellraw will now be sent in chat. You can disable this in the config. (This feature is experimental)
+* You can now auto assign a role when a user whitelists themselves (Please use the bot invite link to update the permissions)
+* You can now auto assign a role when a user links their MC and Discord accounts (Please use the bot invite link to update the permissions)
+* Added a "Refresh" button on the server status command
+* You can now disable discord commands & slash commands you don't want active
+* You can now use a role to control staff commands. If no role is set, Admin/Kick perms are used
+* You can now use your own message formatting for "executed command" messages
+* You can now choose to relay the full command that is executed to discord instead of just the name
