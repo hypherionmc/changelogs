@@ -1,30 +1,23 @@
-### 1.16.5 is now officially end of life. Meaning it won't receive any more updates. If anyone wishes to maintain this version, please get in touch with me on Discord
+### 1.16.5 is end of life. If anyone wishes to maintain this version, please get in touch with me on Discord
 
-## Warning: This version includes some big config changes. Please double-check your config after upgrading!
+#### If you are upgrading from a version below 2.2, this version includes some big config changes. Please double-check your config after upgrading!
+
+#### For the next while, we will only be releasing bug fix updates. We are working on Version 3 of this mod, to redo everything properly and end the rain of terror of the buggy AF V2 releases.
+
 
 **Bug Fixes**:
 
-* Fixed duplicate messages being sent when Formatting is enabled [#35](https://github.com/hypherionmc/sdlink/issues/35)
-* Added error catching to console messages to prevent server crashes
-* Fixed short lag spike when a message is sent to discord from MC
-* Discord Nicknames are now respected in messages sent to minecraft [#37](https://github.com/hypherionmc/sdlink/issues/37)
-* Discord Invite link is now clickable in chat
+* Fixed SAY command using the wrong Author Information - [#41](https://github.com/hypherionmc/sdlink/issues/41) / [HypherionSA](https://github.com/hypherionmc/sdlink-lib/commit/abb403d65d6022fa3c0c9dc174f71c7da7a7bd85)
+* Fixed Startup crashes when no Bot Token has been defined - [#42](https://github.com/hypherionmc/sdlink/issues/42) / [HypherionSA](https://github.com/hypherionmc/sdlink-lib/commit/43b54d3ee75bb326b749386c0bd22049d510f94d)
+* Compiled SDLink-Lib with UTF-8 support. This should fix some issues with Non-English characters - [HypherionSA](https://github.com/hypherionmc/sdlink-lib/commit/1400231ad903c34ef054ab81fdfb629fb0aea68b)
+* Fixed Text Link Command failing due to a missing argument - [#46](https://github.com/hypherionmc/sdlink/issues/46) / [KuryKat](https://github.com/hypherionmc/sdlink-lib/commit/e6c1856264ca5fe8acf4ef17b35c3b98c2ad979d)
+* Fixed Text Link Command not assigning Linked Role to users - [KuryKat](https://github.com/hypherionmc/sdlink-lib/commit/1afbf396b7c1c0547ab32d906c5ee80550ef8019)
+* Fixed "Streaming" discord status type not working - [KuryKat](https://github.com/hypherionmc/sdlink-lib/commit/7d3f4c1a52b515bebe12d6ec77e431f9f1d1de68)
+* Fixed Account Linking not updating Discord Nicknames - [KuryKat](https://github.com/hypherionmc/sdlink-lib/commit/11325d3283a812d53184149ed854054bdccfd334)
+* Fixed ServerStatus Slash Command not replying - [KuryKat](https://github.com/hypherionmc/sdlink-lib/commit/05adf66a6784d977354e388a6d47f8e0c463afea)
+* Fixed `relayFullCommands` ignoring ignored commands - [HypherionSA](https://github.com/hypherionmc/sdlink/commit/5be26c7e110650e5565a9c609fe7feb1370e8456)
 
-**Breaking Changes**:
+**Feature Changes**:
 
-* You can now choose individual destination channels per message. (this change is NOT automatic)
-* Embeds are now controlled per message, and not per channel/webhook (this change is NOT automatic)
-* You can now use Webhooks for messages sent to the console channel (THIS EXCLUDES THE CONSOLE RELAY FUNCTION)
-
-**New Stuff**:
-
-* You can now customize the bot status between "Watching, Playing, Streaming and Listening" [KuryKat](https://github.com/hypherionmc/sdlink-lib/pull/4)
-* Messages sent with tellraw will now be sent in chat. You can disable this in the config. (This feature is experimental)
-* You can now auto assign a role when a user whitelists themselves (Please use the bot invite link to update the permissions)
-* You can now auto assign a role when a user links their MC and Discord accounts (Please use the bot invite link to update the permissions) [#40](https://github.com/hypherionmc/sdlink/issues/40)
-* Added a "Refresh" button on the server status command [#39](https://github.com/hypherionmc/sdlink/issues/39)
-* You can now disable discord commands & slash commands you don't want active
-* You can now use a role to control staff commands. If no role is set, Admin/Kick perms are used
-* You can now use your own message formatting for "executed command" messages
-* You can now choose to relay the full command that is executed to discord instead of just the name
-* Skins and avatars are now better supported on OFFLINE servers [KuryKat](https://github.com/hypherionmc/sdlink-lib/pull/3)
+* Allow Role Names to either be a Name or Role ID - [HypherionSA](https://github.com/hypherionmc/sdlink-lib/commit/87cf431725b3a9a21063defd43d50b82cb43d92b)
+* Text based commands are now deprecated for removal in Version 3. Please switch to using Slash Commands ASAP
