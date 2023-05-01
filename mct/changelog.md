@@ -5,6 +5,11 @@
 #### Quilt versions require the Quilt Standard Libraries
 
 
-**Notes:**
+**Bug Fixes**:
+* Items with no tabs assigned no longer show up in search
+* Search Tooltips should now show the correct tab names
+* Ordered tabs now properly re-orders custom tabs as well
 
-This version has some changes to how tabs are identified. If you have an existing resource pack, please double-check the tab names (and lang keys) by using /mct showTabNames true.
+
+**Changes**:
+* When reloading resources with `F3 + T`, creative tabs will also be reloaded
