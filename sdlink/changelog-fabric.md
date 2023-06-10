@@ -1,3 +1,5 @@
+## REQUIRES [CraterLib](https://www.curseforge.com/minecraft/mc-mods/craterlib) - Modrinth: [CraterLib](https://modrinth.com/mod/craterlib)
+
 **Requires Fabric API for FABRIC**
 
 **Requires Quilt Standard Libraries for Quilt**
@@ -9,7 +11,4 @@
 #### For the next while, we will only be releasing bug fix updates. We are working on Version 3 of this mod, to redo everything properly and end the rain of terror of the buggy AF V2 releases.
 
 
-**Bug Fixes**:
-
-* Fixed "say" and "me" being replaced from all messages sent with "say" and "me"
-* Fixed `@here` and `@everyone` being pingable from chat
+Port to 1.20
