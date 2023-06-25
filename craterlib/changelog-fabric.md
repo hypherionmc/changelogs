@@ -2,4 +2,6 @@
 
 **Requires Quilt Standard Libraries for Quilt**
 
-Initial Release
+**Bug Fixes**:
+
+* Fix EventHandlers not logging full errors
