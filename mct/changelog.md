@@ -5,9 +5,4 @@
 #### Quilt versions require the Quilt Standard Libraries
 
 
-**Bug Fixes**:
-* Fix crash on forge
-* Fix item tab positioning when disabling vanilla tabs
-
-**Changes**:
-* 1.19-1.19.1 is no longer supported, due to changes in fabric's code
+**Ported to 1.20/1.20.1**
