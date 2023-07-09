@@ -10,4 +10,4 @@
 * Fix item tab positioning when disabling vanilla tabs
 
 **Changes**:
-* 1.19-1.19.1 is no longer support, due to changes in fabric's code
+* 1.19-1.19.1 is no longer supported, due to changes in fabric's code
