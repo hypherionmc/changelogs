@@ -6,10 +6,8 @@
 
 
 **Bug Fixes**:
-* Items with no tabs assigned no longer show up in search
-* Search Tooltips should now show the correct tab names
-* Ordered tabs now properly re-orders custom tabs as well
-
+* Fix crash on forge
+* Fix item tab positioning when disabling vanilla tabs
 
 **Changes**:
-* When reloading resources with `F3 + T`, creative tabs will also be reloaded
+* 1.19-1.19.1 is no longer support, due to changes in fabric's code
