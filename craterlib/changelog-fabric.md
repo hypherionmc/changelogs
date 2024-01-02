@@ -3,9 +3,11 @@
 **Requires Quilt Standard Libraries for Quilt**
 
 
-Initial releases for 1.18-1.19.3 in preparation for Simple Discord Link v3 Beta
+**Changes**:
 
-**Bug Fixes**
+* Removed unused apis to speed up porting work
+* Advancement Event now returns the title and description strings, to try and keep mods binary compatible with MC
 
-* Fixed server crash on 1.20.2 forge
-* Fixed Config GUI not rendering properly on 1.20.2
+**Bug Fixes**:
+
+* Fixed MessageBroadcastEvent returning the wrong context class
