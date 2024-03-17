@@ -2,18 +2,20 @@
 - Fabric requires Fabric API, Quilt requires Quilt Standard Libraries.
 - This single Jar supports Forge, Fabric and Quilt. NeoForge support coming soon
 - [Migration guide](https://sdlinkbeta.fdd-docs.com/migration/) for V2 users
+- [Documentation](https://sdlinkbeta.fdd-docs.com)
 
-### THIS SHOULD BE THE LAST BETA BUILD BEFORE WE GO FULL RELEASE
+
+### THIS SHOULD BE ONE OF THE LAST BETA BUILD BEFORE WE GO FULL RELEASE
 
 **Bug Fixes**:
 
-* Fixed replies to Webhook messages not being relayed to Minecraft
-* Fixed linked commands not being able to run on servers without Verification, or for users without a verified account
-* Fixed Access Control not allow players with real Minecraft accounts to verify themselves on offline servers
-* Fixed some missed Vanish integration on some messages
-
+* Fix chat formatting codes being ignored around the `%user%` placeholder - [#108](https://github.com/hypherionmc/sdlink/issues/108) - HypherionSA
+* Fix incompatibility with Beautified-chat-server (and hopefully other chat mods) - [#43](https://github.com/hypherionmc/sdlink/issues/43) - HypherionSA
+* Fixed an error being logged to the console on shutdown from messages still trying to send - [#101](https://github.com/hypherionmc/sdlink/issues/101) - HypherionSA
+* Fix users and roles still be mentionable from chat when it's disabled in the config - [#102](https://github.com/hypherionmc/sdlink/issues/102) - j00w33
+* Fix linked discord commands being broken on 1.20.4 - [#106](https://github.com/hypherionmc/sdlink/issues/106) - HypherionSA
 
 **New Features**:
 
-* Added a config option to allow servers to either let people verify multiple MC accounts, or just one
-* Added `%player_avatar%` and `%player_name%` variables for custom embeds so you can get player information in some Server messages
+* You can now use Forum Posts and Threads for chat, event and console relay. Supported in both channels and webhooks - [#109](https://github.com/hypherionmc/sdlink/issues/109) - HypherionSA
+* You can now use the Minecraft Whitelist with the access control system for more security, and for mods that require the whitelist to be enabled - HypherionSA
