@@ -5,7 +5,7 @@
 - [Documentation](https://sdlinkbeta.fdd-docs.com)
 
 
-### THIS SHOULD BE ONE OF THE LAST BETA BUILD BEFORE WE GO FULL RELEASE
+### THIS SHOULD BE ONE OF THE LAST BETA BUILDS BEFORE WE GO FULL RELEASE
 
 **Bug Fixes**:
 
