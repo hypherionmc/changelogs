@@ -1,1 +1,3 @@
-Ported for 1.19.2 - 1.19.4
+Ported for 1.20.2 and 1.20.4
+
+Initial NeoForge release
