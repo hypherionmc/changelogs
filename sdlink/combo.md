@@ -17,3 +17,9 @@
 * You can now use Forum Posts/Threads as channels/webhooks - [#109](https://github.com/hypherionmc/sdlink/issues/109) - HypherionSA
 * You can now use whitelisting along with the access control system - HypherionSA
 * Beautified Chat (Server) is now supported - [#43](https://github.com/hypherionmc/sdlink/issues/43) - HypherionSA
+
+**Technical Changes**:
+
+* SDLink Core is now merged into the mod
+* SDLink now runs on the nojang api from craterlib, making it minecraft independent (as long as craterlib is available)
+* Updated Discord JDA and some libraries
