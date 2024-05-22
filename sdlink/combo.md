@@ -20,9 +20,11 @@
 * You can now use whitelisting along with the access control system - HypherionSA
 * Beautified Chat (Server) is now supported - [#43](https://github.com/hypherionmc/sdlink/issues/43) - HypherionSA
 * Moved some important logging out of Debug logging, so that errors are more visible - HypherionSA
+* NeoForge support on 1.20.4 and above - HypherionSA
 
 **Technical Changes**:
 
+* Require CraterLib 2.0.0 as lowest version
 * SDLink Core is now merged into the mod
 * SDLink now runs on the nojang api from craterlib, making it minecraft independent (as long as craterlib is available)
 * Updated Discord JDA and some libraries
