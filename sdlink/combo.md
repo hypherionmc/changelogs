@@ -3,7 +3,7 @@
 - [Documentation](https://sdlinkbeta.fdd-docs.com)
 
 
-### LAST BETA BUILD!!! YAY
+### First Release Candidate
 
 **Bug Fixes**:
 
@@ -11,12 +11,15 @@
 * Fixed users being pingable from chat, even when disabled - [#102](https://github.com/hypherionmc/sdlink/issues/102) - j00w33
 * Fixed linked commands failing to run on 1.20.4 - [#106](https://github.com/hypherionmc/sdlink/issues/106) - HypherionSA
 * Fixed chat prefix breaking formatting codes - [#108](https://github.com/hypherionmc/sdlink/issues/108) - HypherionSA
+* Linked accounts are now removed when a member is banned or leaves the server - HypherionSA
+* Setup command now enable webhooks when a webhook url is configured - HypherionSA
 
 **New Features**:
 
 * You can now use Forum Posts/Threads as channels/webhooks - [#109](https://github.com/hypherionmc/sdlink/issues/109) - HypherionSA
 * You can now use whitelisting along with the access control system - HypherionSA
 * Beautified Chat (Server) is now supported - [#43](https://github.com/hypherionmc/sdlink/issues/43) - HypherionSA
+* Moved some important logging out of Debug logging, so that errors are more visible - HypherionSA
 
 **Technical Changes**:
 
