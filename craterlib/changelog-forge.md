@@ -1,3 +1,4 @@
-**Bug Fixes**:
+**New Stuff**:
 
-* Fix Server crash on world join caused by AdvancementEvent
+- Nojang Modding API - Read more about it [here](https://blog.firstdark.dev/p/goodbye-mojang-hello-nojang-5127)
+- Ported for 1.21
