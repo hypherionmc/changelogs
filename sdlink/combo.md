@@ -3,8 +3,6 @@
 - [Documentation](https://sdlinkbeta.fdd-docs.com)
 
 
-### First Release Candidate
-
 **Bug Fixes**:
 
 * Fixed random server crashes on shutdown - [#101](https://github.com/hypherionmc/sdlink/issues/101) - HypherionSA
