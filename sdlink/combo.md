@@ -19,6 +19,7 @@
 * Beautified Chat (Server) is now supported - [#43](https://github.com/hypherionmc/sdlink/issues/43) - HypherionSA
 * Moved some important logging out of Debug logging, so that errors are more visible - HypherionSA
 * NeoForge support on 1.20.4 and above - HypherionSA
+* You can now edit SDLink configs with our brand new [online editor](https://editor.firstdark.dev) instead
 
 **Technical Changes**:
 
