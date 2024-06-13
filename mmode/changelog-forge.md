@@ -1,1 +1,1 @@
-Port for 1.21. Initial NeoForge version
+Port for 1.21.
