@@ -3,7 +3,6 @@
 **Requires Quilt Standard Libraries for Quilt**
 
 
-**New Stuff**:
+**Bug Fixes**:
 
-- Nojang Modding API - Read more about it [here](https://blog.firstdark.dev/p/goodbye-mojang-hello-nojang-5127)
-- Ported for 1.21
+- Fix Crash with Resource Locations that use `mod:format`
