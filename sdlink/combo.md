@@ -1,29 +1,13 @@
 - REQUIRES [CraterLib](https://www.curseforge.com/minecraft/mc-mods/craterlib) - [Modrinth](https://modrinth.com/mod/craterlib)
-- [Migration guide](https://sdlinkbeta.fdd-docs.com/migration/) for V2 users
-- [Documentation](https://sdlinkbeta.fdd-docs.com)
+- [Migration guide](https://sdlink.fdd-docs.com/migration/) for V2 users
 
 
 **Bug Fixes**:
 
-* Fixed random server crashes on shutdown - [#101](https://github.com/hypherionmc/sdlink/issues/101) - HypherionSA
-* Fixed users being pingable from chat, even when disabled - [#102](https://github.com/hypherionmc/sdlink/issues/102) - j00w33
-* Fixed linked commands failing to run on 1.20.4 - [#106](https://github.com/hypherionmc/sdlink/issues/106) - HypherionSA
-* Fixed chat prefix breaking formatting codes - [#108](https://github.com/hypherionmc/sdlink/issues/108) - HypherionSA
-* Linked accounts are now removed when a member is banned or leaves the server - HypherionSA
-* Setup command now enable webhooks when a webhook url is configured - HypherionSA
+* Fixed Vanish integration being reversed (acting like you are vanished when you are not)
+* Hopefully once and for all fix verification system not working with real accounts on offline servers
+* Fixed an issue where the bot cache isn't always loaded by the time the bot has started
 
 **New Features**:
 
-* You can now use Forum Posts/Threads as channels/webhooks - [#109](https://github.com/hypherionmc/sdlink/issues/109) - HypherionSA
-* You can now use whitelisting along with the access control system - HypherionSA
-* Beautified Chat (Server) is now supported - [#43](https://github.com/hypherionmc/sdlink/issues/43) - HypherionSA
-* Moved some important logging out of Debug logging, so that errors are more visible - HypherionSA
-* NeoForge support on 1.20.4 and above - HypherionSA
-* You can now edit SDLink configs with our brand new [online editor](https://editor.firstdark.dev) instead
-
-**Technical Changes**:
-
-* Require CraterLib 2.0.0 as lowest version
-* SDLink Core is now merged into the mod
-* SDLink now runs on the nojang api from craterlib, making it minecraft independent (as long as craterlib is available)
-* Updated Discord JDA and some libraries
+* Added a `reloadcache` discord command to forcefully reload the bot cache if needed
