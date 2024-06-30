@@ -4,10 +4,12 @@
 
 **Bug Fixes**:
 
-* Fixed Vanish integration being reversed (acting like you are vanished when you are not)
-* Hopefully once and for all fix verification system not working with real accounts on offline servers
-* Fixed an issue where the bot cache isn't always loaded by the time the bot has started
+* Reworked the linked commands permissions to that it actually respects role/user permissions
+* Fixed an issue with the account linking commands adding duplicate entries
+* Fixed an NPE error when a tellraw command has no player linked to it
+* Fixed messages only being relayed when a player is vanished, with vanish installed
 
 **New Features**:
 
-* Added a `reloadcache` discord command to forcefully reload the bot cache if needed
+* Added a channel filter config option to limit linked commands to certain channels
+* Added a config option to allow changing how often the channel topic updates. Still limited to 5 minutes as the lowest
