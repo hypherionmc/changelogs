@@ -2,7 +2,7 @@
 - [Migration guide](https://sdlink.fdd-docs.com/migration/) for V2 users
 
 
-*Requires Crater 2.0.1 or newer*
+*Requires CraterLib 2.0.1 or newer*
 
 
 **Bug Fixes**:
