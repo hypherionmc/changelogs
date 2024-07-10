@@ -15,6 +15,7 @@
 * Chat/Event/Console channel cache not reloading with `reloadcache` command
 * Fix Join/Leave messages not working with Vanish
 * Prevent discord messages from being processed before the bot is ready to do so
+* Fixed an NPE error when starting an unconfigured bot
 
 **Changes**:
 
