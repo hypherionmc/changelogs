@@ -7,17 +7,21 @@
 
 **Bug Fixes**:
 
-* Fixed Linked commands ignoring the 'useLinkedNames' config setting
-* Added missing `Send Message In Threads` permissions to invite link and permission checker
-* Channels set to "0" is no longer considered an error, but is logged as a warning
-* Now forcefully logging discord disconnect errors, making it clearer why your bot refused to start.
-* Change lower limit of topic updates to 6 minutes to prevent ratelimits
-* Chat/Event/Console channel cache not reloading with `reloadcache` command
-* Fix Join/Leave messages not working with Vanish
-* Prevent discord messages from being processed before the bot is ready to do so
-* Fixed an NPE error when starting an unconfigured bot
+* Fixed vanished players still being shown in the player list command in discord
+* Fixed join/leave messages not working properly with Vanish (Needs CraterLib update)
+* Fixed Discord formatting not being stripped when `formatting` is set to false (Needs CraterLib update)
+* Finally fixed the 2 year old server hang on shutdown bug
+* Potentially fixed an issue with the bot hanging on startup on some hosting providers
+* Added a better fix for the bot trying to process discord messages when it's not ready
+* Fixed the config migration system not creating a backup of the old config
+* Fixed the `setchannel` command overriding all existing webhook and channel configs
 
-**Changes**:
+**New Features**:
 
-* Improved the way we load the role cache, so it uses less resources on slower servers
-* Swapped the position of the `allowedChannels` config option in the linked commands section
+* Added a `reloadbot` command in Minecraft to completely reload the bot and config without a server restart
+* Added a config option to switch between Silent and Normal bot replies
+* Added a new `%role%` variable to `mcPrefix` to display the name of the highest role the discord user has
+* Added a new `%color% %end_color%` variable to `mcPrefix` to use the Discord user color in game
+* Added a config option to change how the Webhook name is displayed for chat messages
+* Added the player count in the footer of the `/playerlist` discord command
+* Added a new config option to display the discord user information on a hover tooltip in-game
