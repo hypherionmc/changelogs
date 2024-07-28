@@ -15,6 +15,7 @@
 * Added a better fix for the bot trying to process discord messages when it's not ready
 * Fixed the config migration system not creating a backup of the old config
 * Fixed the `setchannel` command overriding all existing webhook and channel configs
+* Fixed `linkedNames` setting being ignored for messages sent to Minecraft
 
 **New Features**:
 
@@ -25,3 +26,4 @@
 * Added a config option to change how the Webhook name is displayed for chat messages
 * Added the player count in the footer of the `/playerlist` discord command
 * Added a new config option to display the discord user information on a hover tooltip in-game
+* Added a new Player Muting system, to mute chats in discord and Minecraft
