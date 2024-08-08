@@ -1,5 +1,8 @@
 **Bug Fixes**:
 
-- Fixed Player Join/Leave event ignoring vanish flag
-- Fixed Chat formatter not stripping discord formatting when `formatting` is disabled in SDLink
-- Fixed startup crash on NeoForge when Vanish is installed (1.20.4/1.21)
+- Fixed incompatibility on NeoForge/Forge with other mods that use Adventure API
+- Fixed Vanish integration being broken on Forge (1.18.2-1.20.4)
+
+**Changes**:
+
+- Changed ChatEvent to support mods like StyledChat better
