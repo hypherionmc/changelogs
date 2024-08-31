@@ -1,9 +1,11 @@
+**New Features**:
+
+- New API's for Maintenance Mode
+- Added support for LuckPerms on Commands
+- Improved Config System with JSON support
+- Added support for more advanced commands
+- Added MiniMOTD support for formatting (Mostly used by MaintenanceMode)
+
 **Bug Fixes**:
 
-- Fixed incompatibility on NeoForge/Forge with other mods that use Adventure API
-- Fixed Vanish integration being broken on Forge (1.18.2-1.20.4)
-- Fixed startup crash due to a mixin config error on 1.20.4
-
-**Changes**:
-
-- Changed ChatEvent to support mods like StyledChat better
+- The config system is no longer Async, which should fix a lot of issues with config reloads and updates
