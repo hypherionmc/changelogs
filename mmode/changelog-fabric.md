@@ -1,7 +1,3 @@
-**Requires Fabric API for FABRIC**
-
-**Requires Quilt Standard Libraries for Quilt**
-
 **New Features**:
 
 - Added LuckPerms support for all MaintenanceMode commands
