@@ -1,5 +1,5 @@
 **Requires Fabric API for FABRIC** / **Requires Quilt Standard Libraries for Quilt**
 
-**Bug Fixes**:
+**New Features**:
 
-- Fix servers not being pingable with CraterLib installed
+Added FTB Essentials Compat Layer for SDLink
