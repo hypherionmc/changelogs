@@ -1,3 +1,3 @@
 - Requires Fabric API for Fabric
 
-Port to 1.21.5
+* Fixed item furnace cook times being hard coded to 200 for first items
