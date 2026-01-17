@@ -2,5 +2,4 @@
 
 **Bug Fixes**
 
-- Fix missing Item Textures
-- Fix startup crash on neoforge
+- Fix portable machine inventory voiding itself on server restart
